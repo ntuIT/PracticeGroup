@@ -1,0 +1,6 @@
+long	rand(long	alimit,	long	blimit)
+{
+	if (alimit!=blimit)
+		return	alimit + rand() % (blimit - alimit +1);
+	return	rand() % (alimit +1)
+}
