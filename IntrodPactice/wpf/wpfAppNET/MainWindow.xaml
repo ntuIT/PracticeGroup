@@ -1,0 +1,30 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfAppNET"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <Menu Name="menu" Margin="0,0,295,195" >
+            <MenuItem Name="mainMenu"
+                      Header="Main">
+                <MenuItem Name="main1" Header="Main A"/>
+                <MenuItem Name="main2" Header="Main B"/>
+            </MenuItem>
+            <MenuItem Name="detailMenu"
+                      Header="Detail">
+                <MenuItem Name="de1" Header="Detail A"/>
+                <MenuItem Name="de2" Header="Detail B"/>
+            </MenuItem>
+        </Menu>
+          <!--
+        <MenuItem Name="mainMenu"
+                      Header="Main" Height="29" Width="130"></MenuItem>
+            <MenuItem Name="detailMenu"
+                      Header="Detail"></MenuItem>
+        -->  
+        
+    </Grid>
+</Window>

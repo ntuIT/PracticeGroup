@@ -1,0 +1,29 @@
+﻿<Window x:Class="Form_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfAppNET"
+        mc:Ignorable="d"
+        Title="Window 1" Height="427.5" Width="495.5">
+    <Grid Margin="0,0,2,26">
+        <GroupBox x:Name="grb" Header="" HorizontalAlignment="Left" Height="283" Margin="10,25,0,0" VerticalAlignment="Top" Width="466">
+            <ListView HorizontalAlignment="Left" VerticalAlignment="Top"
+                      Height="251" Margin="10,10,0,0"  Width="435"
+                      Name ="lsvCoupon" ItemsSource="{Binding Path=coupons}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Tên KH" DisplayMemberBinding="{Binding Path = CustomerName}"/>
+                        <GridViewColumn Header="Ngày đặt" DisplayMemberBinding="{Binding Path = OrderDate}"/>
+                        <GridViewColumn Header="Nhân viên bán" DisplayMemberBinding="{Binding Path = VenderName}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+        <Button x:Name="btnConn" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button Name="btnSearch" Content="☌" HorizontalAlignment="Left" Margin="155,25,0,0" VerticalAlignment="Top" Width="42" Height="23" FontSize="20" FontWeight="Bold"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtID" HorizontalAlignment="Left" Height="23" Margin="30,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtResult" HorizontalAlignment="Left" Height="73" Margin="30,308,0,0" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="229" IsEnabled="False"/>
+    </Grid>
+</Window>

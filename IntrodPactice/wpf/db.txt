@@ -1,0 +1,5 @@
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+"server=127.0.0.1:3306;" _
+            & "uid=root;" _
+            & "pwd=local;" _
+            & "database=mydb"
